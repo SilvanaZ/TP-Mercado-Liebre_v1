@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url("variables.css");
+@import url("general.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("home.css");
+
+/* General*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
 body {
-    background-color: rgba(255, 255, 255, 0.979);
+    font-family: var(--font-roboto);
+    background-color: var(--gris-claro);
+}
+
+li{
+    list-style: none;
 }

@@ -1,0 +1,126 @@
+/* Nav */
+nav {
+    display: none;
+}
+
+/* Banner*/
+
+.home.banner {
+    display: none;
+}
+
+/* MAIN */
+
+main.home {
+    width: 90%;
+    margin: 0 auto;  
+}
+
+/* SECTION */
+
+.home .section-title {
+    margin: 25px 0;
+    color: var(--gris-oscuro);
+}
+
+.home .card {
+    background-color: white;
+    margin-bottom: 10px;
+    
+
+}
+
+.home .card .card-content {
+    border-top: 1px solid var(--gris-claro);
+    padding: 15px;
+    position: relative;
+}
+
+/*.home .card .card-content .icon-truck {
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    width: fit-content;
+    width: -moz-fit-content; 
+    padding: 5px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+}*/
+
+.home .card .card-content .icon-truck i {
+    color: var(--verde);
+    font-size: 16px;
+    display: block;
+    padding: 5px;
+   width: fit-content;
+    width: -moz-fit-content;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    
+}
+
+.home .card .card-content .product-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.home .card .card-content .product-info p:nth-child(1){
+    flex-grow: 0.3;
+}
+
+.home .card .card-content .product-info p:nth-child(2){
+    color: var(--verde);
+    font-size: 14px;
+    flex-grow: 0.7;    
+}
+
+.home .card .card-content .product-name {
+    /*display: none;*/
+    color: var(--gris-oscuro);
+    font-size: 15px;
+    margin-top: 15px;
+}
+/* Media queries*/
+/* Tablet*/
+@media (min-width: 361px) {
+    .home .card {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: inline-block;
+        flex-flow: row wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 45%;
+    
+      
+
+    }
+
+    .home .card .card-content .product-name {
+        display: block;
+    }
+}
+/* desktop */
+@media (min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+    .home .card {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: inline-flexbox;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 23.5%;
+    }
+    
+}

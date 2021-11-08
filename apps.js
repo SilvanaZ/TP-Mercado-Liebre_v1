@@ -1,17 +1,14 @@
 const express = require('express');
-const app = express();
-const PORT = 3000;
-let path = require('path')
+let app = express();
+const PORT = 3030;
+const path = require('path')
 
-//middlewares
-app.use(express.static('public'))
+app.use(express.static('public'));
 
-//rutas
-app.get('/', function (req, res){
-    res.sendFile(path.join(__dirname,'/views/home.html'))
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, "views/index.html"))
 })
 
-app.listen(PORT, ()=>  console.log(`
-servidor escuchando en el puerto ${PORT}
-http://localhost:${PORT}
-`))
+app.listen(PORT, () => console.log(`El servidor esta escuchando en el
+puerto ${PORT}
+http://localhost:${PORT}`));

@@ -1,0 +1,15 @@
+:root {
+    /* colores */
+    --amarillo: #eac926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    /* Fuentes */
+    --font-roboto: "Roboto", sans-serif;
+    --paragraph: 12px;
+    --title: 24px;
+    --prices: 18px;
+    --descounts-descriptions: 16px;
+}

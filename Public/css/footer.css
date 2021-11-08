@@ -1,0 +1,33 @@
+footer {
+    padding-top: 40px;
+}
+
+footer article {
+    margin-bottom: 40px;
+}
+
+footer article.footer-article {
+    text-align: center;
+}
+
+footer article.footer-article i {
+    color: var(--celeste);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+footer article.footer-article h5 {
+    font-size: 16px;
+}
+
+footer article.footer-article p {
+    font-size: 12px;
+    width: 77%;
+    margin: 0 auto;
+}
+
+footer .copy {
+    color: var(--gris-oscuro);
+    font-size: var(--paragraph);
+    margin: 0 0 10px 15px;
+}
