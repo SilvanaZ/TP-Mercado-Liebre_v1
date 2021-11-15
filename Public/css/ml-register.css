@@ -1,0 +1,68 @@
+.form-registro {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.form-registro input {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+}
+
+.input-radio {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.input-radio label,
+.input-radio input {
+    margin: 10px;
+}
+
+.label-categorias {
+    display: block;
+}
+
+.input-checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.div-checkbox {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.div-checkbox input,
+.div-checkbox p {
+    margin: 10px;
+}
+
+.div-checkbox:first-child {
+    margin-top: 15px;
+}
+
+.button-register {
+    /* width: fit-content; */
+    border: none;
+    background-color: var(--celeste);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+.button-register:hover {
+    background-color: #0022AA;
+}
+
+.button-register a {
+    color: white;
+}
