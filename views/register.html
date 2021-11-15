@@ -1,13 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="stylesheet" rel="/css/style.css"
+    <title>Registro</title>
+    <link rel="stylesheet" href="/Public/css/register.css">
 </head>
+
 <body>
-    
+    <div class="form-container">
+        <h2>Registro</h2>
+        <hr>
+        <form action="">
+            <div class="form">
+                <div class="input-container">
+                    <input class="input-style" type="email" name="email" placeholder="Ingrese su email">
+                    <span class="error-message">Debes ingresar tu email</span>
+                </div>
+                <div class="input-container">
+                    <input class="input-style" type="password" name="pass" placeholder="Ingrese su contraseña">
+                    <span class="error-message">Debes ingresar una contraseña</span>
+                </div>
+                <div class="input-container">
+                    <input class="input-style" type="password" name="pass2" placeholder="Ingrese su contraseña">
+                    <span class="error-message">Debes re-ingresar tu contraseña</span>
+                </div>
+                <div class="check">
+                    <label for="terms">Acepto los <a href="">términos y condiciones</a></label>
+                    <input type="checkbox" name="terms" id="terms">
+                    <span class="error-message">Debes aceptar los términos y condiciones</span>
+                </div>
+                <div class="button-container">
+                    <span class="error-message">Hubo errores en el envío</span>
+                    <button type="submit" class="btn btn-submit">Registrarme</button>
+                </div>
+                <span><a href="login.html">Ya tengo cuenta</a></span>
+            </div>
+        </form>
+    </div>
+
 </body>
-</html
+
+</html>

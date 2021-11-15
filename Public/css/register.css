@@ -1,0 +1,26 @@
+* {
+    display: flex;
+    text-align: center;
+}
+
+form-container {
+    background-color: white;
+    color: black;
+}
+
+form {}
+
+input-container {
+    align-items: center;
+}
+
+check {}
+
+button-container {
+    background-color: gray;
+    border: none;
+    font-size: 20px;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
