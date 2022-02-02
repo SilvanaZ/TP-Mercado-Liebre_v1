@@ -1,0 +1,98 @@
+/* BODY */
+
+.main-home {
+    font-family: var(--font-roboto);
+    background-color: var(--color-grisClaro);
+    margin: 100px auto 250px;
+    width: 90vw;
+}
+
+.main-home .banner {
+    animation: zoom-banner 1s ease-in infinite alternate-reverse;
+    display: none;
+    width: 100%;
+}
+
+@keyframes zoom-banner {
+    100% {transform: scale(0.98);}
+}
+
+.main-home .section-1-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-home .section-1-home article {
+    background-color: white;
+    border-top: solid 1px var(--color-grisClaro);
+    margin: 0 auto 10px;
+    max-width: 340px;
+    padding: 15px;
+    position: relative;
+}
+
+.main-home .section-1-home article .card-content {
+    border-top: 1px solid var(--color-grisClaro);
+}
+
+.main-home .section-1-home article .card-content .icon-truck {
+    background-color: white;
+    border: solid 1px var(--color-verde);
+    border-radius: 50%;
+    bottom: 26px;
+    color: var(--color-verde);
+    right: 10px;
+    padding: 4px;
+    position: absolute;
+    width: fit-content;
+}
+
+.main-home .section-1-home article .card-content .datos {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 120px;
+}
+.main-home .section-1-home article .card-content .desc-card {
+    align-items: center;
+    background-color: rgba(0, 0, 0);
+    bottom: 0;
+    color: rgba(255, 255, 255);
+    display: flex;
+    font-size: 16px;
+    font: medium;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    transition: all 450ms;
+    width: 100%;
+}
+
+.main-home .section-1-home article .card-content .desc-card:hover {
+    opacity: 0.8;
+}
+
+.main-home .section-1-home article .card-content .datos :last-child {
+    align-items: flex-end;
+    display: flex;
+    color: var(--color-verde);
+    font-size: 14px;
+}
+
+@media (min-width : 768px){
+    .main-home {
+        margin-top: 0;
+    }
+
+    .main-home .banner {
+        display: block;
+    }
+    
+    .main-home .section-1-home article {
+        width: 260px;
+    }
+}
