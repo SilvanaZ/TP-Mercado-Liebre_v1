@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="formulario">
+        <form class="form2" action="/" method="post">
+
+            <h2 class="form__title">Inicia Sesión</h2>
+
+            <div class="datos">
+                <input class="input-style" type="text" name="usuario" placeholder="Nombre y Apellido:">
+                <span class="error-message">debes ingresar tu Nombre y Apellido</span>
+            </div>
+
+            <div class="datos">
+                <input class="input-style" type="text" name="usuario" placeholder="Nombre de usuari@:">
+                <span class="error-message">debes ingresar tu Nombre de usuari@</span>
+            </div>
+            <div class="datos2">
+                <H3>Fecha de nacimiento</H3>
+                <input type="date" name="fecha" min="1970-01-01">
+            </div>
+
+
+            <div class="datos">
+                <input class="input-style" type="text" name="domicilio" placeholder="Domicilio:">
+                <span class="error-message">debes ingresar tu Domicilio</span>
+            </div>
+
+
+            <div class="datos2">
+                <h3>Perfil de usuario</h3>
+                <label for="Comprador">Comprador</label>
+                <input type="radio" name="Comprador" value="Comprador">
+
+                <label for="Vendedor">Vendedor</label>
+                <input type="checkbox" name="Vendedor" value="Vendedor">
+            </div>
+
+
+            <div class="datos2">
+                <label>Categorias de interes:</label>
+                <select name="categarias">
+                    <option value="Electro">Electro</option>
+                    <option value="Moda">Moda</option>
+                    <option value="Hogar">Hogar</option>
+                    <option value="Jugueteria">Jugueteria</option>
+                    <option value="vida sana">vida sana</option>
+                </select>
+            </div>
+
+            <div class="datos2">
+                <label>Seleccionar una foto para el perfil:</label>
+                <input type="file" name="avatar" accept=".jpg" multiple>
+            </div>
+
+            <div class="datos">
+                <input class="input-style" type="password" name="passworl" placeholder="Ingrese su contraseña:">>
+                <span class="error-message">debes ingresar una contraseña</span>
+            </div>
+
+            <div class="datos">
+                <input class="input-style" type="password" name="passworl" placeholder="Confirmar contraceña:">
+                <span class="error-message">debes confirmar la contraseña</span>
+            </div>
+
+
+            <div class="datos">
+                <input class="input-style" type="email" name="email" placeholder="Email:">
+                <span class="error-message">debes ingresar tu Email</span>
+            </div>
+
+            <div class="botones">
+                <button type="reset">Borrar</button>
+                <button type="submit">Enviar</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

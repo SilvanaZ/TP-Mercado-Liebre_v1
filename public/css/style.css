@@ -1,1 +1,153 @@
-@import url("home.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('home.css');
+@import url('header.css');
+@import url('footer.css');
+@import url('register.css');
+@import url('login.css');
+
+
+:root {
+    --yellow: #EAC926;  /* Colors-Puedo guardar el color en una variable, despues solo lo invoco*/
+    --blue: #03264C;
+    --light_blue: #1259c3;
+    --dark_grey: #666;
+    --light-grey: #ebebeb;
+    --green: #39b54a;
+    /*Font*/
+    --font-roboto:"Roboto", sans-serif;
+    /*Font sizes*/
+    --paragraph: 12px; /*parrafo o cuerpo del texto*/
+    --title: 24px; /*precios*/
+    --prices: 18px; /*precios*/
+    --discounts-descriptions: 16px;/*descuentos y descripciones*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ a {
+     color:black;
+     text-decoration: none;
+ }
+ 
+ body {
+      font-family: var(--font-roboto);
+      background-color: var(--light-grey);
+ }
+ 
+ li {
+     list-style: none;
+ }
+
+ /*Estilos para form*/
+
+.form-container {
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+h2 {
+font-size: var(--title);
+margin: 15px 0;
+} 
+
+.input-container {
+margin: 22px 0;
+}
+
+.estilo-input {
+/* font-size: 20px; */
+width: 80%;
+height: 25px;
+border: none;
+border-radius: 4px;
+}
+
+.input-container input:focus {
+    outline: none;
+} 
+
+.msj-error {
+display: none;
+}
+
+.form-title {
+text-align: center;
+margin-top: 28px;
+font-size: var(--prices);
+}
+
+.input-container-usuario label {
+    margin: 0 8px;
+}
+
+.input-container-intereses {
+    margin: 10px 0;
+}
+
+.input-container-intereses label input {
+    margin: 8px 0;
+}
+
+.input-file-container label {
+    font-size: var(--discounts-descriptions); 
+    border: solid 1px black;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.input-file-container input {
+    display: none;
+}
+
+.button-container {
+    margin: 20px 0;
+    
+}
+
+.button {
+    font-size: var(--prices); 
+    font-family: var(--font-roboto);
+    border: none;
+    border-radius: 4px;
+    background-color: var(--light_blue);
+    color: var(--light-grey);
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+/*Media-queries-tablet*/
+@media (min-width: 768px) {
+
+    .estilo-input {
+        width: 70%;
+        height: 30px;
+    }
+}
+
+
+/*Media-queries-desktop*/
+@media (min-width: 1200px) {
+
+    .estilo-input {
+        width: 60%;
+        height: 35px;
+    }
+
+    .button-container {
+        transition: background-color 500ms;
+    }
+
+    .button:hover {
+        background-color: #0022AA;
+    }
+}

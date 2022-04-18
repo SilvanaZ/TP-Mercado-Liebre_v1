@@ -1,98 +1,234 @@
-/* BODY */
-
-.main-home {
-    font-family: var(--font-roboto);
-    background-color: var(--color-grisClaro);
-    margin: 100px auto 250px;
-    width: 90vw;
-}
-
-.main-home .banner {
-    animation: zoom-banner 1s ease-in infinite alternate-reverse;
+/* Nav */
+nav {
     display: none;
-    width: 100%;
 }
 
-@keyframes zoom-banner {
-    100% {transform: scale(0.98);}
+/* Banner*/
+.home.banner {
+    display: none;
 }
 
-.main-home .section-1-home {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* MAIN le da un recuadro a la pantalla*/
+main.home {
+    width: 90%;
+    margin: 0 auto;  
 }
 
-.main-home .section-1-home article {
+/* separa las categorias con las imagenes */
+.home .section-title {
+    margin: 25px 0;
+    color: var(--gris-oscuro);
+}
+
+/* le da color a las tarjetas*/
+.home .card {
     background-color: white;
-    border-top: solid 1px var(--color-grisClaro);
-    margin: 0 auto 10px;
-    max-width: 340px;
+    margin-bottom: 10px;
+}
+
+.home .card:hover {
+    box-shadow: 4px 4px 4px 4px black;
+}
+/* le da color y tamaño a las tarjetas */
+.home .card .card-content {
+    border-top: 1px solid var(--gris-claro);
     padding: 15px;
     position: relative;
 }
 
-.main-home .section-1-home article .card-content {
-    border-top: 1px solid var(--color-grisClaro);
-}
-
-.main-home .section-1-home article .card-content .icon-truck {
-    background-color: white;
-    border: solid 1px var(--color-verde);
+/*.home .card .card-content .icon-truck {
+    border: 1px solid var(--verde);
     border-radius: 50%;
-    bottom: 26px;
-    color: var(--color-verde);
-    right: 10px;
-    padding: 4px;
-    position: absolute;
     width: fit-content;
-}
-
-.main-home .section-1-home article .card-content .datos {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    width: 120px;
-}
-.main-home .section-1-home article .card-content .desc-card {
-    align-items: center;
-    background-color: rgba(0, 0, 0);
-    bottom: 0;
-    color: rgba(255, 255, 255);
-    display: flex;
-    font-size: 16px;
-    font: medium;
-    height: 100%;
-    justify-content: center;
-    left: 0;
-    opacity: 0;
+    width: -moz-fit-content; 
+    padding: 5px;
     position: absolute;
-    text-align: center;
-    transition: all 450ms;
-    width: 100%;
+    top: -15px;
+    right: 20px;
+}*/
+
+/*para el camion*/
+.home .card .card-content .icon-truck i {
+    color: var(--verde);
+    font-size: 16px;
+    display: block;
+    padding: 5px;
+   width: fit-content;
+    width: -moz-fit-content;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
-.main-home .section-1-home article .card-content .desc-card:hover {
-    opacity: 0.8;
-}
-
-.main-home .section-1-home article .card-content .datos :last-child {
-    align-items: flex-end;
+/*es para el espacio entre el camion con los datos q le siguen */
+.home .card .card-content .product-info {
     display: flex;
-    color: var(--color-verde);
-    font-size: 14px;
+    justify-content: space-between;
+    padding-top: 5px;
 }
 
-@media (min-width : 768px){
-    .main-home {
-        margin-top: 0;
+  /*maneja el espacio entre el precio y el descuento*/
+.home .card .card-content .product-info p:nth-child(1){
+    flex-grow: 0.3;
+}
+
+/*le da color, tamaño y distancia al descuento con el precio*/
+.home .card .card-content .product-info p:nth-child(2){
+    color: var(--verde);
+    font-size: 14px;
+    flex-grow: 5;    
+}
+
+/*le da color a los nombres de los productos, tamaño y espacio*/
+.home .card .card-content .product-name:hover{
+    color: var(--gris-oscuro);
+    font-size: 15px;
+    margin-top: 15px;
+    
+}
+
+.home .card .card-content .product-name {
+    color:white;
+
+}
+
+.busqueda1 {
+    width: 30px;
+    height: 35px;
+    border-radius: 4px;
+    border:none;
+}
+
+/* Media queries*/
+
+/* tablet*/
+@media (min-width: 361px) {
+    .home .card {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: inline-block;
+        flex-flow: row wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 45%;
     }
 
-    .main-home .banner {
+    .home .card .card-content .product-name {
         display: block;
     }
-    
-    .main-home .section-1-home article {
-        width: 260px;
+}
+
+/* desktop */
+@media (min-width: 769px) {
+
+    header .logo-barra {
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 120px;
     }
+
+    header .logo {
+        display: inline-block;
+        width: 30%;
+    }
+
+    header .search-bar {
+        display: inline-block;
+        width: 30%;
+        display: flex;
+    }
+    header .busqueda {
+       margin-top: 0;
+    }
+
+    header .search-bar input {
+        width: 75%;
+        height: 35px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+    .home .card {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: inline-flexbox;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 23.5%;
+    }
+     header .horizontal nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .horizontal nav a {
+        margin-left: 15px;
+    }
+
+    header .quota {
+        text-align: center;
+        margin: 10px 0 20px;
+        width: 30%;
+        margin-top: 30px;
+    }
+
+    
+    footer {
+        background-color: white;
+    }
+    
+    .footerflex{
+        display: flex;  
+        background: white; 
+    }
+
+    .footerflex .footer-article{
+        text-align: center;
+        margin: 40px;
+    }
+    
+    .footerflex .footer-article i{
+        font-size: 32px;
+        color: blue;
+        margin-bottom: 15px;
+    }
+    
+    .footerflex .footer-article p{
+        font-size: 15px;
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    footer i:hover {
+        background-color: rgb(255, 251, 0);
+    }
+
+}
+
+.icon-truck i:hover {
+    animation-name: camiongirando;
+   animation-duration: 1s;
+}
+
+@keyframes camiongirando {
+    
+    0% {} 
+    
+    50% {  transform: rotate(-50deg);
+    }   
+
+    100% {   transform: rotate(-100deg);
+    }   
 }

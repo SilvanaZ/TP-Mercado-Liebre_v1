@@ -1,0 +1,69 @@
+/* HEADER*/
+
+/*le da el color del fondo, tamaño al fondo y a las categorias*/
+header {
+    background-color: var(--yellow);
+    font-size: var(--paragraph);
+    padding-bottom: 10px;
+}
+
+/*le da color al fondo del menu hamburguesa, le da color al menu, le da tamaño, borde y lo centra */
+header .burger-menu {
+    background-color: var(--ligh_blue);
+    color: #fff;
+    width: 25px;
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto 0;
+}
+
+/*hace q el logo y la barra de busqueda esten juntas, le da una separacion de los bordes al logo, baja el contenido encerrado en el fondo amarrilo*/
+header .logo {
+    display: inline-block;
+    width: 45%;
+    padding-top: 25px;
+}
+
+/* search-bar */
+/*hace q la barra de busqueda este al lado del logo y se separen un poco*/
+header .search-bar {
+    display: inline-block;
+    width: 45%;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+header .search-bar input {
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+header .logo-barra {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header .busqueda {
+    width: 30px;
+    height: 30px;
+    margin-top: 25px;
+    height: 40px;
+}
+
+/* hace q el texto comprar en cuotas y sin tarjeta de crédito este centrado */
+header .quota {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+/* Nav */
+
+/*hace q se separe una categoria de la otra, entre ayuda y crea tu cuenta*/
+header nav ul#top-list {
+    margin-bottom: 25px;
+}

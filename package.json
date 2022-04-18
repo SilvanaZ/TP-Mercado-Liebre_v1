@@ -1,0 +1,22 @@
+{
+  "name": "tp-mercado-liebre_v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilvanaZ/TP-Mercado-Liebre_v1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SilvanaZ/TP-Mercado-Liebre_v1/issues"
+  },
+  "homepage": "https://github.com/SilvanaZ/TP-Mercado-Liebre_v1#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
