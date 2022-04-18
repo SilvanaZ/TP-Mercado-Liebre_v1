@@ -31,7 +31,7 @@ main.home {
 }
 /* le da color y tamaño a las tarjetas */
 .home .card .card-content {
-    border-top: 1px solid var(--gris-claro);
+    border-top: 1px solid var(--ligh-grey);
     padding: 15px;
     position: relative;
 }
@@ -170,7 +170,7 @@ main.home {
      header .horizontal nav {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     header .horizontal nav a {
@@ -201,7 +201,7 @@ main.home {
     
     .footerflex .footer-article i{
         font-size: 32px;
-        color: blue;
+        color:blue;
         margin-bottom: 15px;
     }
     
