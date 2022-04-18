@@ -17,7 +17,7 @@ main.home {
 /* separa las categorias con las imagenes */
 .home .section-title {
     margin: 25px 0;
-    color: var(--gris-oscuro);
+    color: var(--dark_grey);
 }
 
 /* le da color a las tarjetas*/
@@ -27,7 +27,7 @@ main.home {
 }
 
 .home .card:hover {
-    box-shadow: 4px 4px 4px 4px black;
+    box-shadow: 4px 4px 4px 4px rgb(58, 58, 58);
 }
 /* le da color y tamaño a las tarjetas */
 .home .card .card-content {
@@ -49,13 +49,13 @@ main.home {
 
 /*para el camion*/
 .home .card .card-content .icon-truck i {
-    color: var(--verde);
+    color: var(--green);
     font-size: 16px;
     display: block;
     padding: 5px;
    width: fit-content;
     width: -moz-fit-content;
-    border: 1px solid #39b54a;
+    border: 1px solid var(--green);
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
@@ -77,14 +77,14 @@ main.home {
 
 /*le da color, tamaño y distancia al descuento con el precio*/
 .home .card .card-content .product-info p:nth-child(2){
-    color: var(--verde);
+    color: var(--green);
     font-size: 14px;
     flex-grow: 5;    
 }
 
 /*le da color a los nombres de los productos, tamaño y espacio*/
 .home .card .card-content .product-name:hover{
-    color: var(--gris-oscuro);
+    color: var(--dark_grey);
     font-size: 15px;
     margin-top: 15px;
     
@@ -107,7 +107,7 @@ main.home {
 /* tablet*/
 @media (min-width: 361px) {
     .home .card {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        box-shadow: 0px 0px 10px rgb(0, 0, 0, 3);
         display: inline-block;
         flex-flow: row wrap;
         flex-direction: row;
