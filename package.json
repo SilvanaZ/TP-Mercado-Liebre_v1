@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/SilvanaZ/TP-Mercado-Liebre_v1#readme",
   "dependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.22"
   }
 }
